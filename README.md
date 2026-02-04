@@ -1,16 +1,44 @@
-# React + Vite
+# PlaceToFrame
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Turn your favorite locations into beautiful custom posters. Grab a map, style it however you like, and download it as a print-ready image.
 
-Currently, two official plugins are available:
+## What is this?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+PlaceToFrame is a simple web tool for creating personalized map posters. Want a poster of your hometown, vacation spot, or that one place that means something to you? Just search for it, pick your style, and boom — you've got a poster ready to frame.
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+First, install the dependencies:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Then fire up the dev server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser and start creating.
+
+## Build for Production
+
+Ready to ship it? Run:
+
+```bash
+npm run build
+```
+
+This spits out an optimized build in the `dist/` folder.
+
+## Tech Stack
+
+- **React** for the UI
+- **Vite** for lightning-fast dev builds
+- **Tailwind CSS** for styling
+- **Canvas API** for rendering map posters
+
+## How It Works
+
+Pick a location, choose from different map themes and resolutions, and generate a poster. Everything renders on canvas and downloads as an image — no server needed, all client-side magic.
