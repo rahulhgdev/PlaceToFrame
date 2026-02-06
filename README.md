@@ -37,6 +37,8 @@ This spits out an optimized build in the `dist/` folder.
 - **React** for the UI
 - **Vite** for lightning-fast dev builds
 - **Tailwind CSS** for styling
+- **Nominatim API** for Geocoding
+- **Overpass API** for querying/extracting data from OpenStreetMap (OSM) 
 - **Canvas API** for rendering map posters
 
 ## How It Works
